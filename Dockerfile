@@ -1,7 +1,8 @@
 FROM python:3.11-slim
 
 # System deps required by weasyprint (PDF generation) and PyMuPDF.
-RUN apt-get update && apt-get install -y --no-install-recommends \
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
     libc6-dev \
     libpango-1.0-0 \
     libpangocairo-1.0-0 \
